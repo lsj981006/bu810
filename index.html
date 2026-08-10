@@ -1,0 +1,2636 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLARA 쏠라라 | 완벽한 휴식을 위한 감성 여행 일정</title>
+  <meta name="description" content="복잡한 계획 없이 취향에 맞춰 떠나는 발리, 하와이, 괌, 푸켓 휴양 및 액티비티 맞춤 타임라인 일정 추천. 3박 4일, 4박 5일 일자별 코스 가이드.">
+  
+  <!-- 구글 서체 (Playfair Display, Noto Sans KR, Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================================================
+       SOLARA 쏠라라 DESIGN SYSTEM & STYLES (WARM & CLEAN PALETTE)
+       ========================================================================== */
+    :root {
+      /* Palette Specs */
+      --bg-beige: #FDFBF7;           /* Warm Beige Main BG */
+      --primary-terracotta: #E07A5F; /* Soft Sunset Terracotta */
+      --primary-dark: #C85F45;       /* Deep Terracotta Hover */
+      --primary-light: #F4A261;      /* Warm Coral Orange */
+      --primary-soft: #FDF0EC;       /* Soft Terracotta Tint */
+      
+      --bg-cream: #F4F1DE;           /* Warm Cream Surface Tint */
+      --bg-card: #FFFFFF;            /* Pure Warm White */
+      --accent-sage: #81B29A;        /* Muted Sage Green */
+      --accent-sage-dark: #5B8A72;   /* Dark Sage Accent */
+      --accent-sage-soft: #EBF4F0;   /* Sage Light Background */
+      
+      --text-dark: #3D405B;          /* Warm Gray Charcoal Text */
+      --text-muted: #6C757D;         /* Muted Gray Subtitle */
+      --text-light: #A0A5AA;         /* Light Gray Hint */
+      
+      --border-color: #E5E0D8;        /* Soft Clean Border */
+      --border-focus: #E07A5F;        /* Highlight Border */
+      
+      /* Typography */
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Noto Sans KR', 'Plus Jakarta Sans', system-ui, sans-serif;
+      
+      /* Spacing & Radii */
+      --container-width: 1240px;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      
+      /* Shadows & Floating UI */
+      --shadow-sm: 0 2px 8px rgba(61, 64, 91, 0.05);
+      --shadow-md: 0 8px 24px rgba(61, 64, 91, 0.08);
+      --shadow-floating: 0 10px 32px rgba(61, 64, 91, 0.08);
+      --shadow-hover: 0 20px 48px rgba(224, 122, 95, 0.18);
+      --glass-bg: rgba(253, 251, 247, 0.92);
+      
+      /* Transitions */
+      --transition-fast: 0.2s ease;
+      --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-beige);
+      color: var(--text-dark);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+    }
+
+    /* Section Header */
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3.5rem auto;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 1rem;
+      background-color: var(--accent-sage-soft);
+      color: var(--accent-sage-dark);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-radius: var(--radius-full);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+      word-break: keep-all;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      word-break: keep-all;
+    }
+
+    /* Common Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-weight: 700;
+      border-radius: var(--radius-full);
+      transition: var(--transition-normal);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-terracotta);
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(224, 122, 95, 0.35);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(224, 122, 95, 0.45);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-card);
+      color: var(--text-dark);
+      border: 1.5px solid var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary-terracotta);
+      color: var(--primary-terracotta);
+      background-color: var(--primary-soft);
+    }
+
+    /* Header & Navbar */
+    .header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition-normal);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--text-dark);
+      letter-spacing: -0.5px;
+    }
+
+    .brand-logo-en {
+      font-family: var(--font-serif);
+      color: var(--primary-terracotta);
+      margin-left: 0.25rem;
+      font-weight: 700;
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--primary-terracotta), var(--primary-light));
+      color: #FFFFFF;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 12px rgba(224, 122, 95, 0.3);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+    }
+
+    .nav-link {
+      font-weight: 600;
+      font-size: 0.98rem;
+      color: var(--text-dark);
+      position: relative;
+      padding: 0.5rem 0;
+      transition: var(--transition-fast);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2.5px;
+      background-color: var(--primary-terracotta);
+      transition: var(--transition-fast);
+    }
+
+    .nav-link:hover {
+      color: var(--primary-terracotta);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .bookmark-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--bg-cream);
+      border: 1px solid var(--border-color);
+      padding: 0.55rem 1.2rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: var(--transition-normal);
+    }
+
+    .bookmark-btn:hover {
+      background-color: var(--primary-soft);
+      border-color: var(--primary-light);
+      color: var(--primary-terracotta);
+    }
+
+    .bookmark-badge {
+      background-color: var(--primary-terracotta);
+      color: #FFFFFF;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 12px;
+      min-width: 20px;
+      text-align: center;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .bookmark-badge.bounce {
+      transform: scale(1.35);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      width: 28px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 100%;
+      height: 2.5px;
+      background-color: var(--text-dark);
+      border-radius: 4px;
+      transition: var(--transition-normal);
+    }
+
+    /* Hero Section with Light Background & Clean Floating Filter Bar */
+    .hero {
+      position: relative;
+      padding: 5.5rem 0 6rem 0;
+      background: linear-gradient(180deg, rgba(253, 251, 247, 0.6) 0%, rgba(244, 241, 222, 0.8) 100%),
+                  url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      color: var(--text-dark);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 920px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.3rem;
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-full);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--primary-terracotta);
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 900;
+      line-height: 1.22;
+      margin-bottom: 1.25rem;
+      color: var(--text-dark);
+      word-break: keep-all;
+    }
+
+    .hero-title span {
+      color: var(--primary-terracotta);
+      font-family: var(--font-serif);
+      font-style: italic;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+      font-weight: 500;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      word-break: keep-all;
+    }
+
+    /* REDESIGNED FLOATING FILTER BAR (NO HEAVY BACKGROUND) */
+    .floating-filter-bar {
+      background: #FFFFFF;
+      border: 1px solid #E5E0D8;
+      box-shadow: var(--shadow-floating);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) auto;
+      gap: 1.2rem;
+      align-items: center;
+      text-align: left;
+    }
+
+    .filter-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      padding: 0.4rem 0.8rem;
+      border-right: 1px solid #F0ECE4;
+    }
+
+    .filter-card:last-of-type {
+      border-right: none;
+    }
+
+    .filter-label {
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .filter-select {
+      border: none;
+      background: transparent;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      outline: none;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .hero-search-btn {
+      height: 100%;
+      min-height: 54px;
+      padding: 0 2.2rem;
+      font-size: 1.05rem;
+    }
+
+    /* Quick Filter Tags */
+    .quick-tags-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 1.8rem;
+      flex-wrap: wrap;
+    }
+
+    .quick-tag-label {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .quick-tag-btn {
+      padding: 0.4rem 1.1rem;
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      color: var(--text-dark);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: var(--transition-fast);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+
+    .quick-tag-btn:hover, .quick-tag-btn.active {
+      background: var(--primary-terracotta);
+      color: #FFFFFF;
+      border-color: var(--primary-terracotta);
+      box-shadow: 0 4px 14px rgba(224, 122, 95, 0.35);
+    }
+
+    /* Destination Highlights Grid */
+    .destinations-section {
+      padding: 6.5rem 0;
+      background-color: var(--bg-beige);
+    }
+
+    .destination-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .destination-card {
+      position: relative;
+      height: 380px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      cursor: pointer;
+      transition: var(--transition-normal);
+    }
+
+    .destination-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .destination-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .destination-card:hover .destination-img {
+      transform: scale(1.08);
+    }
+
+    .destination-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 30%, rgba(61, 64, 91, 0.9) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.5rem;
+      color: #FFFFFF;
+    }
+
+    .destination-header-badges {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .destination-badge {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(8px);
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .destination-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: rgba(61, 64, 91, 0.75);
+      backdrop-filter: blur(8px);
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: #FFD166;
+    }
+
+    .destination-name {
+      font-size: 1.7rem;
+      font-weight: 900;
+      margin-bottom: 0.2rem;
+    }
+
+    .destination-desc {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-bottom: 0.75rem;
+    }
+
+    .destination-tags {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .destination-tag {
+      font-size: 0.78rem;
+      background: rgba(255, 255, 255, 0.22);
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    /* Itinerary Section & Category Tabs */
+    .itineraries-section {
+      padding: 6.5rem 0;
+      background-color: var(--bg-cream);
+      position: relative;
+    }
+
+    .tabs-container {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 0.7rem 1.5rem;
+      background-color: var(--bg-card);
+      color: var(--text-dark);
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: var(--transition-normal);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .tab-btn:hover {
+      border-color: var(--primary-terracotta);
+      color: var(--primary-terracotta);
+    }
+
+    .tab-btn.active {
+      background-color: var(--primary-terracotta);
+      color: #FFFFFF;
+      border-color: var(--primary-terracotta);
+      box-shadow: 0 4px 14px rgba(224, 122, 95, 0.35);
+    }
+
+    .filter-meta-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      padding: 0 0.5rem;
+    }
+
+    .results-count {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .results-count span {
+      color: var(--primary-dark);
+      font-weight: 800;
+    }
+
+    .reset-filter-btn {
+      font-size: 0.88rem;
+      color: var(--primary-terracotta);
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+      display: none;
+    }
+
+    .reset-filter-btn.visible {
+      display: inline-block;
+    }
+
+    /* Itinerary List Layout */
+    .itinerary-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    /* Itinerary Card Component */
+    .itinerary-card {
+      background-color: var(--bg-card);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+      transition: var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .itinerary-card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(224, 122, 95, 0.35);
+    }
+
+    /* Card Banner & Summary Card Header */
+    .itinerary-card-header {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      position: relative;
+      background-color: #FFFFFF;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-banner-img {
+      width: 100%;
+      height: 100%;
+      min-height: 270px;
+      object-fit: cover;
+    }
+
+    .card-main-info {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-top-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-destination-tag {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--accent-sage-dark);
+      background-color: var(--accent-sage-soft);
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+    }
+
+    .card-save-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-beige);
+      border: 1px solid var(--border-color);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      transition: var(--transition-fast);
+    }
+
+    .card-save-btn:hover {
+      border-color: var(--primary-terracotta);
+      color: var(--primary-terracotta);
+    }
+
+    .card-save-btn.saved {
+      background: var(--primary-terracotta);
+      color: #FFFFFF;
+      border-color: var(--primary-terracotta);
+    }
+
+    .card-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    /* Destination Summary Bar (Total Budget | Best Season | Target | Key Spots) */
+    .highlight-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      background-color: var(--bg-beige);
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .summary-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .summary-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .summary-value {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+
+    /* DAY Tabs inside Card */
+    .day-tabs-bar {
+      display: flex;
+      gap: 0.5rem;
+      padding: 1.25rem 2rem 0 2rem;
+      background-color: var(--bg-beige);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .day-tab-btn {
+      padding: 0.75rem 1.5rem;
+      font-weight: 800;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      border-top-left-radius: var(--radius-sm);
+      border-top-right-radius: var(--radius-sm);
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: none;
+      transition: var(--transition-fast);
+    }
+
+    .day-tab-btn:hover {
+      color: var(--primary-terracotta);
+    }
+
+    .day-tab-btn.active {
+      background-color: #FFFFFF;
+      color: var(--primary-terracotta);
+      border-color: var(--border-color);
+      box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    /* Vertical Timeline UI Layout */
+    .timeline-container {
+      padding: 2.2rem 2rem;
+      background-color: #FFFFFF;
+      position: relative;
+    }
+
+    .timeline-track {
+      position: relative;
+      padding-left: 2.5rem;
+    }
+
+    /* Vertical Line Indicator */
+    .timeline-track::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      bottom: 15px;
+      left: 11px;
+      width: 3px;
+      background: linear-gradient(180deg, var(--primary-terracotta) 0%, var(--accent-sage) 100%);
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.2rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Node Circle Indicator */
+    .timeline-node {
+      position: absolute;
+      left: -2.5rem;
+      top: 2px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #FFFFFF;
+      border: 3px solid var(--primary-terracotta);
+      box-shadow: 0 0 0 3px rgba(224, 122, 95, 0.2);
+      z-index: 2;
+    }
+
+    .timeline-header {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    /* Category Badges & Tags */
+    .badge-time {
+      background-color: var(--text-dark);
+      color: #FFFFFF;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+    }
+
+    .badge-category {
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+    }
+
+    .badge-category.activity { background-color: #E3F2FD; color: #1976D2; }
+    .badge-category.food { background-color: #FBE9E7; color: #D84315; }
+    .badge-category.cafe { background-color: #EFEBE9; color: #4E342E; }
+    .badge-category.sunset { background-color: #FFF3E0; color: #E65100; }
+    .badge-category.pub { background-color: #F3E5F5; color: #7B1FA2; }
+    .badge-category.healing { background-color: var(--accent-sage-soft); color: var(--accent-sage-dark); }
+    .badge-category.hotel { background-color: #EDE7F6; color: #512DA8; }
+
+    .badge-duration {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      background: var(--bg-beige);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+    }
+
+    .badge-cost {
+      font-size: 0.78rem;
+      color: var(--primary-dark);
+      font-weight: 700;
+      background: var(--primary-soft);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .timeline-title {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 0.35rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .timeline-tip {
+      margin-top: 0.65rem;
+      background-color: var(--accent-sage-soft);
+      border-left: 3.5px solid var(--accent-sage-dark);
+      padding: 0.55rem 0.85rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      color: var(--accent-sage-dark);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Custom Plan Banner & Modal */
+    .custom-banner {
+      padding: 5.5rem 0;
+      background: linear-gradient(135deg, var(--text-dark) 0%, #2B3A33 100%);
+      color: #FFFFFF;
+    }
+
+    .custom-banner-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    .custom-banner-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+      word-break: keep-all;
+    }
+
+    .custom-banner-subtitle {
+      font-size: 1.05rem;
+      opacity: 0.9;
+      word-break: keep-all;
+    }
+
+    /* Modal Overlay */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(61, 64, 91, 0.75);
+      backdrop-filter: blur(6px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-normal);
+      padding: 1.5rem;
+    }
+
+    .modal-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-card {
+      background: var(--bg-card);
+      width: 100%;
+      max-width: 640px;
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--bg-cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: var(--text-muted);
+    }
+
+    .modal-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+
+    .modal-subtitle {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-group.full-width {
+      grid-column: span 2;
+    }
+
+    .form-label {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+
+    .form-input, .form-select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-beige);
+      outline: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .form-input:focus, .form-select:focus {
+      border-color: var(--primary-terracotta);
+      background-color: #FFFFFF;
+    }
+
+    .plan-result-box {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      background-color: var(--accent-sage-soft);
+      border: 1px solid var(--accent-sage);
+      border-radius: var(--radius-md);
+    }
+
+    .plan-result-box.active {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+
+    /* Saved Drawer */
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(61, 64, 91, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 2500;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-normal);
+    }
+
+    .drawer-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .saved-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 420px;
+      max-width: 90vw;
+      height: 100vh;
+      background-color: var(--bg-card);
+      z-index: 2600;
+      box-shadow: -8px 0 30px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .saved-drawer.open {
+      transform: translateX(0);
+    }
+
+    .drawer-header {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--bg-beige);
+    }
+
+    .drawer-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .drawer-body {
+      padding: 1.5rem;
+      flex-grow: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .saved-item-card {
+      display: flex;
+      gap: 1rem;
+      padding: 0.85rem;
+      background-color: var(--bg-beige);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+      align-items: center;
+    }
+
+    .saved-item-img {
+      width: 75px;
+      height: 75px;
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+    }
+
+    .saved-item-details {
+      flex-grow: 1;
+    }
+
+    .saved-item-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 0.2rem;
+    }
+
+    .saved-item-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .saved-item-remove {
+      color: #E74C3C;
+      font-size: 1.1rem;
+      padding: 0.4rem;
+    }
+
+    .drawer-footer {
+      padding: 1.25rem 1.5rem;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--bg-beige);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    /* Reviews Section */
+    .reviews-section {
+      padding: 6.5rem 0;
+      background-color: var(--bg-beige);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .review-card {
+      background-color: var(--bg-card);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .review-stars {
+      color: #FFD166;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .review-text {
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .review-user {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .review-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .review-user-name {
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .review-user-stay {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 3000;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      pointer-events: none;
+    }
+
+    .toast {
+      pointer-events: auto;
+      background-color: var(--text-dark);
+      color: #FFFFFF;
+      padding: 0.85rem 1.25rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      font-size: 0.92rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      animation: slideInRight 0.3s ease forwards;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--text-dark);
+      color: var(--bg-beige);
+      padding: 5rem 0 2.5rem 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .footer-brand-title {
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      color: #FFFFFF;
+    }
+
+    .footer-brand-desc {
+      font-size: 0.92rem;
+      opacity: 0.75;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      max-width: 320px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .newsletter-input {
+      padding: 0.65rem 1rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+      color: #FFFFFF;
+      outline: none;
+      font-size: 0.88rem;
+      width: 100%;
+    }
+
+    .footer-col-title {
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+      color: #FFFFFF;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-link {
+      font-size: 0.9rem;
+      opacity: 0.75;
+      transition: var(--transition-fast);
+    }
+
+    .footer-link:hover {
+      opacity: 1;
+      color: var(--primary-light);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      opacity: 0.65;
+    }
+
+    /* Keyframes */
+    @keyframes slideInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1100px) {
+      .destination-grid { grid-template-columns: repeat(2, 1fr); }
+      .itinerary-card-header { grid-template-columns: 1fr; }
+      .card-banner-img { height: 240px; min-height: auto; }
+      .highlight-summary-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .floating-filter-bar { grid-template-columns: 1fr; }
+      .filter-card { border-right: none; border-bottom: 1px solid #F0ECE4; padding-bottom: 0.75rem; }
+      .hero-search-btn { width: 100%; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .hamburger { display: flex; }
+      .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-card);
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: var(--shadow-lg);
+        clip-path: circle(0% at 100% 0%);
+        transition: clip-path 0.4s ease-in-out;
+      }
+      .nav-menu.open { clip-path: circle(140% at 100% 0%); }
+      .hero-title { font-size: 2.3rem; }
+      .destination-grid { grid-template-columns: 1fr; }
+      .highlight-summary-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .custom-banner-box { flex-direction: column; text-align: center; }
+      .form-grid { grid-template-columns: 1fr; }
+      .form-group.full-width { grid-column: span 1; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#home" class="brand-logo">
+        <div class="brand-icon">🌴</div>
+        <span>SOLARA <span class="brand-logo-en">Resorts</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">홈</a>
+        <a href="#resorts" class="nav-link">인기 휴양지</a>
+        <a href="#itineraries" class="nav-link">일정 추천</a>
+        <a href="#custom-plan" class="nav-link">나만의 일정</a>
+        <a href="#reviews" class="nav-link">여행 후기</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="bookmark-btn" id="openSavedDrawerBtn">
+          <span>❤️ 찜한 일정</span>
+          <span class="bookmark-badge" id="bookmarkCountBadge">0</span>
+        </button>
+
+        <div class="hamburger" id="hamburgerToggle" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION & CLEAN FLOATING FILTER BAR (NO HEAVY BACKGROUND)
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span>✨ 감성 럭셔리 리조트 맞춤 일정</span>
+        </div>
+        <h1 class="hero-title">
+          완벽한 휴식을 위한<br><span>감성 여행 일정</span>
+        </h1>
+        <p class="hero-subtitle">
+          복잡한 계획 없이, 취향에 맞춰 떠나는 휴양지별 맞춤 코스 추천
+        </p>
+
+        <!-- Floating Filter Bar ('맞춤 일정 찾기') -->
+        <form class="floating-filter-bar" id="heroSearchForm">
+          <div class="filter-card">
+            <label class="filter-label" for="heroDestination">📍 여행지 (Destination)</label>
+            <select class="filter-select" id="heroDestination">
+              <option value="all">전체 휴양지</option>
+              <option value="bali">발리 (Bali)</option>
+              <option value="hawaii">하와이 (Hawaii)</option>
+              <option value="guam">괌 (Guam)</option>
+              <option value="phuket">푸켓 (Phuket)</option>
+            </select>
+          </div>
+
+          <div class="filter-card">
+            <label class="filter-label" for="heroDuration">🗓️ 여행 기간 (Duration)</label>
+            <select class="filter-select" id="heroDuration">
+              <option value="all">전체 기간</option>
+              <option value="3N4D">3박 4일</option>
+              <option value="4N5D">4박 5일</option>
+            </select>
+          </div>
+
+          <div class="filter-card">
+            <label class="filter-label" for="heroTheme">🌿 여행 테마 (Theme)</label>
+            <select class="filter-select" id="heroTheme">
+              <option value="all">전체 테마</option>
+              <option value="relaxation">휴양 중심 (힐링/스파)</option>
+              <option value="adventure">액티비티 중심 (해양/투어)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary hero-search-btn">
+            🔎 맞춤 일정 찾기
+          </button>
+        </form>
+
+        <!-- Quick Tag Pills -->
+        <div class="quick-tags-container">
+          <span class="quick-tag-label">추천 스팟 키워드:</span>
+          <button type="button" class="quick-tag-btn" data-tag="스미냑">🏝️ #스미냑 비치클럽</button>
+          <button type="button" class="quick-tag-btn" data-tag="와이키키">🏄‍♂️ #와이키키 세일링</button>
+          <button type="button" class="quick-tag-btn" data-tag="투몬">🐬 #투몬 돌핀크루즈</button>
+          <button type="button" class="quick-tag-btn" data-tag="피피섬">⛵ #피피섬 요트</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DESTINATION CARDS HIGHLIGHTS
+         ========================================================================== -->
+    <section class="destinations-section" id="resorts">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Top Destinations</span>
+          <h2 class="section-title">인기 리조트 휴양지</h2>
+          <p class="section-subtitle">원하시는 휴양지를 클릭하시면 맞춤 코스 타임라인으로 바로 연결됩니다.</p>
+        </div>
+
+        <div class="destination-grid">
+          <!-- Card 1: Bali -->
+          <div class="destination-card" data-destination="bali">
+            <img class="destination-img" src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="발리 풀빌라">
+            <div class="destination-overlay">
+              <div class="destination-header-badges">
+                <span class="destination-badge">인도네시아</span>
+                <span class="destination-rating">★ 4.96</span>
+              </div>
+              <div>
+                <h3 class="destination-name">발리 (Bali)</h3>
+                <p class="destination-desc">스미냑 비치클럽 & 우붓 정글 힐링</p>
+                <div class="destination-tags">
+                  <span class="destination-tag">#스미냑선셋</span>
+                  <span class="destination-tag">#바투르일출</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Hawaii -->
+          <div class="destination-card" data-destination="hawaii">
+            <img class="destination-img" src="https://images.unsplash.com/photo-1542259009477-d625272157b7?auto=format&fit=crop&w=800&q=80" alt="하와이 와이키키">
+            <div class="destination-overlay">
+              <div class="destination-header-badges">
+                <span class="destination-badge">미국</span>
+                <span class="destination-rating">★ 4.94</span>
+              </div>
+              <div>
+                <h3 class="destination-name">하와이 (Hawaii)</h3>
+                <p class="destination-desc">와이키키 세일링 & 쿠알로아 ATV</p>
+                <div class="destination-tags">
+                  <span class="destination-tag">#하나우마베이</span>
+                  <span class="destination-tag">#다이아몬드헤드</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Guam -->
+          <div class="destination-card" data-destination="guam">
+            <img class="destination-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="괌 투몬베이">
+            <div class="destination-overlay">
+              <div class="destination-header-badges">
+                <span class="destination-badge">미국령 괌</span>
+                <span class="destination-rating">★ 4.89</span>
+              </div>
+              <div>
+                <h3 class="destination-name">괌 (Guam)</h3>
+                <p class="destination-desc">투몬 비치 휴식 & 돌핀 선셋 크루즈</p>
+                <div class="destination-tags">
+                  <span class="destination-tag">#씨워커</span>
+                  <span class="destination-tag">#남부드라이브</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Phuket -->
+          <div class="destination-card" data-destination="phuket">
+            <img class="destination-img" src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=800&q=80" alt="푸켓 안다만">
+            <div class="destination-overlay">
+              <div class="destination-header-badges">
+                <span class="destination-badge">태국</span>
+                <span class="destination-rating">★ 4.88</span>
+              </div>
+              <div>
+                <h3 class="destination-name">푸켓 (Phuket)</h3>
+                <p class="destination-desc">피피섬 요트 투어 & 파통 야시장</p>
+                <div class="destination-tags">
+                  <span class="destination-tag">#코랄아일랜드</span>
+                  <span class="destination-tag">#올드타운카페</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VISUAL ITINERARIES & RICH PRESET TIMELINES
+         ========================================================================== -->
+    <section class="itineraries-section" id="itineraries">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Visual Travel Timelines</span>
+          <h2 class="section-title">휴양지별 맞춤 일정 타임라인</h2>
+          <p class="section-subtitle">휴양 중심과 액티비티 중심 코스 중 선택하여 일자별 상세 타임라인을 확인하세요.</p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="tabs-container" id="categoryTabs">
+          <button type="button" class="tab-btn active" data-filter="all">🌟 전체 코스 보기</button>
+          <button type="button" class="tab-btn" data-filter="3N4D">⚡ 3박 4일 코스</button>
+          <button type="button" class="tab-btn" data-filter="4N5D">🌴 4박 5일 코스</button>
+          <button type="button" class="tab-btn" data-filter="relaxation">🧘‍♀️ 휴양 중심</button>
+          <button type="button" class="tab-btn" data-filter="adventure">🏄‍♂️ 액티비티 중심</button>
+        </div>
+
+        <!-- Filter Meta Bar -->
+        <div class="filter-meta-bar">
+          <div class="results-count" id="resultsCount">총 <span>8</span>개의 맞춤 리조트 일정을 추천합니다</div>
+          <span class="reset-filter-btn" id="resetFiltersBtn">필터 초기화</span>
+        </div>
+
+        <!-- Dynamic Itinerary List -->
+        <div class="itinerary-list" id="itineraryList">
+          <!-- JS를 통해 인젝션됩니다 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CUSTOM ITINERARY BANNER
+         ========================================================================== -->
+    <section class="custom-banner" id="custom-plan">
+      <div class="container">
+        <div class="custom-banner-box">
+          <div>
+            <h2 class="custom-banner-title">나만을 위한 프라이빗 일정을 신청해보세요</h2>
+            <p class="custom-banner-subtitle">
+              희망하는 여행지와 취향을 선택해주시면 쏠라라 전담 큐레이터가 타임라인을 설계해드립니다.
+            </p>
+          </div>
+          <button class="btn btn-primary" id="openCustomModalBtn" style="padding: 1rem 2.2rem; font-size: 1.05rem;">
+            ✨ 나만의 맞춤 일정 신청
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TRAVELER REVIEWS
+         ========================================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Real Reviews</span>
+          <h2 class="section-title">여행자들의 실제 코스 후기</h2>
+          <p class="section-subtitle">쏠라라 타임라인 코스로 완벽한 휴가를 즐긴 분들의 이야기입니다.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "발리 3박 4일 휴양 코스로 다녀왔는데 스미냑 비치클럽 선셋과 우붓 라이스테라스 카페 뷰가 감동적이었습니다. 일자별 타임라인이 너무 유용했어요!"
+              </p>
+            </div>
+            <div class="review-user">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="김지현" class="review-avatar">
+              <div>
+                <div class="review-user-name">김지현 님</div>
+                <div class="review-user-stay">발리 우붓 풀빌라 이용</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "하와이 4박 5일 액티비티 코스로 쿠알로아 랜치 ATV와 하나우마 베이 스노클링까지 완벽하게 소화했습니다. 시간대별 팁이 신의 한 수였습니다."
+              </p>
+            </div>
+            <div class="review-user">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="박성민" class="review-avatar">
+              <div>
+                <div class="review-user-name">박성민 & 이수진 님</div>
+                <div class="review-user-stay">하와이 와이키키 리조트 이용</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "괌 3박 4일 돌핀 크루즈와 선셋 바비큐 코스는 가족 모두 만족했습니다. 어린 아이와 함께하기에도 부담 없는 일정이었습니다."
+              </p>
+            </div>
+            <div class="review-user">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="최유진" class="review-avatar">
+              <div>
+                <div class="review-user-name">최유진 님</div>
+                <div class="review-user-stay">괌 투몬베이 두짓타니 이용</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">SOLARA 쏠라라</h3>
+          <p class="footer-brand-desc">
+            휴양지 전문 감성 리조트 일자별 타임라인 일정 추천 플랫폼. 완벽한 휴가를 위한 맞춤 코스를 선사합니다.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="이메일 주소를 입력하세요..." required>
+            <button type="submit" class="btn btn-primary" style="padding: 0.65rem 1.2rem; font-size: 0.88rem;">구독</button>
+          </form>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">인기 휴양지</h4>
+          <div class="footer-links">
+            <a href="#resorts" class="footer-link">발리 스미냑 & 우붓</a>
+            <a href="#resorts" class="footer-link">하와이 와이키키 & 마우이</a>
+            <a href="#resorts" class="footer-link">괌 투몬베이 비치</a>
+            <a href="#resorts" class="footer-link">푸켓 피피섬 요트</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">바로가기</h4>
+          <div class="footer-links">
+            <a href="#home" class="footer-link">홈 메인</a>
+            <a href="#itineraries" class="footer-link">전체 맞춤 코스</a>
+            <a href="#custom-plan" class="footer-link">나만의 일정 신청</a>
+            <a href="#reviews" class="footer-link">여행자 실제 후기</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">고객센터 & 문의</h4>
+          <div class="footer-links">
+            <span class="footer-link">📧 help@solararesorts.co.kr</span>
+            <span class="footer-link">📞 1588-7000 (평일 09:00~18:00)</span>
+            <span class="footer-link">📍 서울특별시 강남구 테헤란로 쏠라라 타워</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 SOLARA Resorts & Itineraries. All Rights Reserved.</p>
+        <p>Warm & Clean Resort Vacation Recommendation Platform</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SAVED BOOKMARKS SIDE DRAWER
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="saved-drawer" id="savedDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title">❤️ 찜한 일정 목록</h3>
+      <button class="modal-close-btn" id="closeSavedDrawerBtn" style="position:static;">✕</button>
+    </div>
+    <div class="drawer-body" id="savedDrawerBody">
+      <!-- 동적 생성 -->
+    </div>
+    <div class="drawer-footer">
+      <button class="btn btn-secondary" id="clearSavedBtn" style="width: 100%;">모든 찜한 일정 삭제</button>
+      <button class="btn btn-primary" onclick="window.print()" style="width: 100%;">🖨️ 일정 출력 / PDF 저장</button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       CUSTOM PLANNER MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="customModalBackdrop">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeCustomModalBtn">✕</button>
+      <div class="modal-header">
+        <h3 class="modal-title">나만의 맞춤 여행 일정 신청</h3>
+        <p class="modal-subtitle">원하시는 조건과 취향을 선택해주시면 전담 큐레이터가 타임라인을 구성해드립니다.</p>
+      </div>
+
+      <form id="customPlanForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="planDestination">희망 휴양지</label>
+            <select class="form-select" id="planDestination" required>
+              <option value="발리 (Bali)">발리 (Bali)</option>
+              <option value="하와이 (Hawaii)">하와이 (Hawaii)</option>
+              <option value="괌 (Guam)">괌 (Guam)</option>
+              <option value="푸켓 (Phuket)">푸켓 (Phuket)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="planDuration">일정 기간</label>
+            <select class="form-select" id="planDuration" required>
+              <option value="3박 4일">3박 4일</option>
+              <option value="4박 5일">4박 5일</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="planBudget">여행 테마</label>
+            <select class="form-select" id="planBudget" required>
+              <option value="휴양 중심 (힐링/스파)">휴양 중심 (힐링/스파)</option>
+              <option value="액티비티 중심 (해양/투어)">액티비티 중심 (해양/투어)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="planTravelers">여행 인원</label>
+            <input type="number" class="form-input" id="planTravelers" value="2" min="1" max="10" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.95rem;">
+          ✨ 맞춤 타임라인 생성하기
+        </button>
+      </form>
+
+      <div class="plan-result-box" id="customPlanResult"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT LOGIC (COMPREHENSIVE 8 PRESET DATASETS & FILTER ENGINE)
+       ========================================================================== -->
+  <script>
+    // Exact Preset Datasets (Bali, Hawaii, Guam, Phuket x 3N4D Relaxation / 4N5D Activity)
+    const ITINERARIES_DATA = [
+      // 1. 발리 (3박 4일 / 휴양중심)
+      {
+        id: "iti-bali-relaxation-3n",
+        title: "발리 스미냑 비치클럽 & 우붓 라이스테라스 힐링 3박 4일",
+        destination: "발리",
+        destinationCode: "bali",
+        duration: "3N4D",
+        durationLabel: "3박 4일",
+        theme: "relaxation",
+        themeLabel: "휴양 중심 (힐링/스파)",
+        rating: 4.96,
+        reviewsCount: 142,
+        imgUrl: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+        summaryBar: {
+          totalBudget: "약 145만 원 / 1인",
+          bestSeason: "4월 ~ 10월 (건기)",
+          target: "커플 / 신혼여행 / 힐링족",
+          keySpots: "스미냑 비치클럽, 우붓 라이스테라스, 우붓 스파, 짐바란 선셋"
+        },
+        days: {
+          "DAY 1": [
+            { time: "11:30 AM", category: "hotel", categoryLabel: "🏨 숙소 Check-In", duration: "1.5시간 소요", cost: "무료 (포함)", title: "발리 공항 전담 미팅 & 스미냑 리조트 입실", desc: "공항 전담 기사 미팅 후 스미냑 프론트 리조트 이동. 웰컴 시트러스 코코넛 음료.", tip: "리조트 체크인 시 내일 스미냑 선셋 데이베드를 예약하세요." },
+            { time: "13:30 PM", category: "food", categoryLabel: "🍽️ 맛집", duration: "1.5시간 소요", cost: "약 25,000원/인", title: "스미냑 메인 스트리트 '바비굴링 & 나시고랭' 점심", desc: "현지 유명 맛집에서 즐기는 바삭한 발리식 돼지고기 구이 바비굴링과 인도네시아 볶음밥.", tip: "삼발 마타 소스는 밥과 쓱쓱 비벼 먹으면 풍미가 좋습니다." },
+            { time: "16:00 PM", category: "sunset", categoryLabel: "🌅 석양 스팟", duration: "3시간 소요", cost: "약 40,000원/인", title: "스미냑 바다 포테이토헤드 비치클럽 선셋 파티", desc: "인피니티 풀 데이베드에 누워 붉은 태양이 인도양으로 지는 낭만적인 석양 감상.", tip: "일몰 1시간 전 입장을 추천합니다." }
+          ],
+          "DAY 2": [
+            { time: "09:00 AM", category: "cafe", categoryLabel: "☕ 힐링 카페", duration: "2시간 소요", cost: "약 15,000원/인", title: "우붓 뜨갈라랑 라이스테라스 뷰 계단식 논 카페", desc: "초록빛 계단식 논이 한눈에 보이는 조용한 카페에서 로컬 핸드드립 커피와 스콘.", tip: "파라솔 아침 햇살 자리가 사진 촬영 포인트입니다." },
+            { time: "14:00 PM", category: "healing", categoryLabel: "💆‍♀️ 스파/휴식", duration: "2시간 소요", cost: "약 60,000원/인", title: "우붓 정글 뷰 120분 전통 천연 아로마 오일 스파", desc: "계곡 소리와 바람 소리를 들으며 전신 피로를 풀어주는 리조트 럭셔리 아로마 마사지.", tip: "라벤더 오일 블렌딩을 선택해보세요." },
+            { time: "18:30 PM", category: "food", categoryLabel: "🍽️ 맛집", duration: "2시간 소요", cost: "약 50,000원/인", title: "우붓 클리프 캔들라이트 파인 다이닝", desc: "우붓 아융강 계곡 위 촛불 조명 아래서 즐기는 5코스 퓨전 디너.", tip: "창가 석양 뷰 예약은 필수입니다." }
+          ],
+          "DAY 3": [
+            { time: "10:30 AM", category: "cafe", categoryLabel: "☕ 힐링 카페", duration: "2시간 소요", cost: "약 12,000원/인", title: "우붓 아티스트 거리 수공예 갤러리 감상", desc: "원목 조각, 은공예 갤러리 감상 및 아늑한 오가닉 티 브런치.", tip: "원목 소품 구입 시 미소와 함께 흥정이 가능합니다." },
+            { time: "17:30 PM", category: "sunset", categoryLabel: "🌅 석양 스팟", duration: "2.5시간 소요", cost: "약 60,000원/인", title: "짐바란 비치 촛불 씨푸드 바비큐 & 해변 석양", desc: "모래사장 파라솔 아래서 먹는 갓 구운 랍스터, 대하구이와 해변 일몰.", tip: "칠리 바비큐 특제 소스가 아주 잘 어울립니다." }
+          ],
+          "DAY 4": [
+            { time: "10:00 AM", category: "healing", categoryLabel: "💆‍♀️ 스파/휴식", duration: "2시간 소요", cost: "무료", title: "리조트 전용 풀 여유 수영 & 짐 정리", desc: "여유로운 늦잠 후 수영장에서 휴식 후 레이트 체크아웃.", tip: "쏠라라 고객은 오후 2시 체크아웃이 무료 적용됩니다." }
+          ]
+        }
+      },
+
+      // 2. 발리 (4박 5일 / 액티비티중심)
+      {
+        id: "iti-bali-activity-4n",
+        title: "발리 바투르산 일출 트레킹 & 캉구 서핑, 래프팅 익스트림 4박 5일",
+        destination: "발리",
+        destinationCode: "bali",
+        duration: "4N5D",
+        durationLabel: "4박 5일",
+        theme: "adventure",
+        themeLabel: "액티비티 중심 (해양/투어)",
+        rating: 4.95,
+        reviewsCount: 168,
+        imgUrl: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80",
+        summaryBar: {
+          totalBudget: "약 165만 원 / 1인",
+          bestSeason: "5월 ~ 10월 (건기)",
+          target: "액티비티 매니아 / 친구 / 커플",
+          keySpots: "바투르산 화산 일출, 캉구 비치 서핑, 아융강 래프팅, 발리스윙"
+        },
+        days: {
+          "DAY 1": [
+            { time: "14:00 PM", category: "hotel", categoryLabel: "🏨 숙소 Check-In", duration: "1.5시간 소요", cost: "무료", title: "발리 공항 전담 미팅 & 캉구 서퍼 리조트 입실", desc: "캉구 서핑 힙스터 거리에 위치한 리조트 입실 및 서핑 장비 점검.", tip: "캉구 비치로드 산책로를 걸어보세요." },
+            { time: "17:30 PM", category: "sunset", categoryLabel: "🌅 석양 스팟", duration: "2시간 소요", cost: "약 20,000원/인", title: "캉구 에코 비치 서퍼들의 선셋 라이브 바", desc: "파도를 가르는 서퍼들을 바라보며 시원한 빈탕 생맥주 감상.", tip: "칠리 치즈 프라이와 생맥주 조합이 최고입니다." }
+          ],
+          "DAY 2": [
+            { time: "03:00 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "5시간 소요", cost: "약 50,000원/인", title: "바투르 화산 (1,717m) 별빛 등반 & 운해 일출 트레킹", desc: "새벽 지프/도보 트레킹으로 바투르 화산 정상에 올라 운해 위로 뜨는 태양 감상.", tip: "정상은 쌀쌀하므로 겉옷과 기모 후드티를 챙기세요." },
+            { time: "14:00 PM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "2시간 소요", cost: "약 40,000원/인", title: "캉구 비치 입문 전문 강사 서핑 클래스", desc: "안전한 파도에서 즐기는 1:1 서핑 레슨 및 패들링, 테이크오프 성공하기.", tip: "래시가드와 썬스틱을 꼭 지참하세요." }
+          ],
+          "DAY 3": [
+            { time: "09:30 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "4시간 소요", cost: "약 45,000원/인", title: "우붓 아융강 계곡 12km 익스트림 급류 래프팅", desc: "열대 우림 절벽과 폭포 사이를 노저어 내려가는 스릴 넘치는 급류 래프팅.", tip: "샤워 후 입을 건조한 여벌 옷을 준비하세요." },
+            { time: "16:00 PM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "2시간 소요", cost: "약 30,000원/인", title: "우붓 발리스윙 (Bali Swing) 인공 그네 & 사원 투어", desc: "정글 계곡 위 20m 공중 그네를 타고 인생 사진 촬영 및 르기안 사원 둘러보기.", tip: "화려한 드레스를 현장에서 대여할 수 있습니다." }
+          ],
+          "DAY 4": [
+            { time: "10:00 AM", category: "food", categoryLabel: "🍽️ 맛집", duration: "2시간 소요", cost: "약 25,000원/인", title: "스미냑 힙스터 타코 & 테킬라 펍 점심", desc: "갓 튀긴 쉬림프 타코와 수제 나초 시식.", tip: "라임 주스와 테킬라 믹스가 청량합니다." },
+            { time: "17:00 PM", category: "pub", categoryLabel: "🍹 야시장/펍", duration: "3시간 소요", cost: "약 30,000원/인", title: "스미냑 바운스 야시장 & 비치 클럽 디제잉", desc: "신나는 음악과 라이브 공연이 펼쳐지는 스미냑야간 펍 탐방.", tip: "현지 친구들과 소통하기 좋은 분위기입니다." }
+          ],
+          "DAY 5": [
+            { time: "10:00 AM", category: "healing", categoryLabel: "💆‍♀️ 스파/휴식", duration: "2시간 소요", cost: "포함", title: "마지막 스포츠 마사지 팩 후 공항 이동", desc: "운동으로 지친 근육을 풀어주는 딥티슈 마사지 후 전용 샌딩 차량 탑승.", tip: "공항 면세점에서 발리 초콜릿을 구경해보세요." }
+          ]
+        }
+      },
+
+      // 3. 하와이 (3박 4일 / 휴양중심)
+      {
+        id: "iti-hawaii-relaxation-3n",
+        title: "하와이 와이키키 비치 릴랙싱 & 카타마란 석양 세일링 3박 4일",
+        destination: "하와이",
+        destinationCode: "hawaii",
+        duration: "3N4D",
+        durationLabel: "3박 4일",
+        theme: "relaxation",
+        themeLabel: "휴양 중심 (힐링/스파)",
+        rating: 4.94,
+        reviewsCount: 118,
+        imgUrl: "https://images.unsplash.com/photo-1542259009477-d625272157b7?auto=format&fit=crop&w=800&q=80",
+        summaryBar: {
+          totalBudget: "약 195만 원 / 1인",
+          bestSeason: "연중 온화 (4월 ~ 10월 베스트)",
+          target: "휴양 선호 / 신혼부부 / 가족",
+          keySpots: "와이키키 비치, 럭셔리 카타마란, 오아후 해안, 다이아몬드헤드 뷰"
+        },
+        days: {
+          "DAY 1": [
+            { time: "12:00 PM", category: "hotel", categoryLabel: "🏨 숙소 Check-In", duration: "1.5시간 소요", cost: "무료", title: "호놀룰루 공항 미팅 & 와이키키 오션뷰 호텔 체크인", desc: "와이키키 해변 바로 앞 오션뷰 호텔 체크인. 웰컴 플라워 레이 환영 인사.", tip: "발코니에서 와이키키 파도가 정면으로 보이는 방을 요청하세요." },
+            { time: "15:00 PM", category: "food", categoryLabel: "🍽️ 맛집", duration: "1.5시간 소요", cost: "약 30,000원/인", title: "와이키키 대표 '울프강 스테이크' 가벼운 런치", desc: "드라이 에이징 스테이크 슬라이스와 시원한 하와이안 코나 생맥주.", tip: "해피아워 타임을 활용하면 합리적입니다." },
+            { time: "17:30 PM", category: "sunset", categoryLabel: "🌅 석양 스팟", duration: "2시간 소요", cost: "약 80,000원/인", title: "와이키키 럭셔리 카타마란 석양 세일링 크루즈", desc: "다이아몬드 헤드를 배경으로 붉게 물드는 석양을 요트 위에서 샴페인과 함께 감상.", tip: "선상에서 칵테일이 무제한 제공됩니다." }
+          ],
+          "DAY 2": [
+            { time: "09:30 AM", category: "cafe", categoryLabel: "☕ 힐링 카페", duration: "1.5시간 소요", cost: "약 15,000원/인", title: "와이키키 로컬 앤티티 아사이볼 브런치", desc: "갓 딴 바나나와 블루베리, 꿀이 가득 들어간 앤티티 아사이 볼 브런치.", tip: "테이크아웃하여 와이키키 잔디밭에서 먹으면 더욱 좋습니다." },
+            { time: "11:30 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "4시간 소요", cost: "렌터카 비용", title: "오아후 동부 해안 77번 국도 드라이브 & 맛집 탐방", desc: "블로우홀, 마카푸우 관망대를 지나며 드라이브 후 갈릭 셔림프 샌드위치 시식.", tip: "카일루아 비치에 잠시 차를 세우고 모래사장을 걸어보세요." }
+          ],
+          "DAY 3": [
+            { time: "10:00 AM", category: "healing", categoryLabel: "💆‍♀️ 스파/휴식", duration: "2시간 소요", cost: "약 120,000원/인", title: "카하야 리조트 전통 로미로미 마사지", desc: "하와이 전통 손가락 압으로 전신 혈류를 순환시켜주는 힐링 마사지.", tip: "스파 후 전용 해변 체어 이용이 가능합니다." },
+            { time: "18:00 PM", category: "food", categoryLabel: "🍽️ 맛집", duration: "2시간 소요", cost: "약 70,000원/인", title: "하와이 퓨전 파인 다이닝 로얄 하와이안 디너", desc: "분홍빛 로얄 하와이안 호텔 정원에서 먹는 싱싱한 랍스터와 피쉬 타코.", tip: "야외 정원 좌석은 사진이 가장 예쁘게 나옵니다." }
+          ],
+          "DAY 4": [
+            { time: "10:00 AM", category: "cafe", categoryLabel: "☕ 힐링 카페", duration: "2시간 소요", cost: "자율", title: "알라모아나 쇼핑센터 기념품 쇼핑 후 공항 이동", desc: "호놀룰루 쿠키와 코나 커피 원두 쇼핑 후 공항 전담 차량 탑승.", tip: "파인애플 모양 호놀룰루 쿠키는 선물용으로 최고입니다." }
+          ]
+        }
+      },
+
+      // 4. 하와이 (4박 5일 / 액티비티중심)
+      {
+        id: "iti-hawaii-activity-4n",
+        title: "하와이 쿠알로아 랜치 ATV & 하나우마 베이 스노클링 4박 5일",
+        destination: "하와이",
+        destinationCode: "hawaii",
+        duration: "4N5D",
+        durationLabel: "4박 5일",
+        theme: "adventure",
+        themeLabel: "액티비티 중심 (해양/투어)",
+        rating: 4.98,
+        reviewsCount: 195,
+        imgUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+        summaryBar: {
+          totalBudget: "약 220만 원 / 1인",
+          bestSeason: "연중 온화",
+          target: "액티비티 매니아 / 친구 / 모험가",
+          keySpots: "쿠알로아 랜치, 하나우마 베이, 다이아몬드헤드, 와이키키 서핑"
+        },
+        days: {
+          "DAY 1": [
+            { time: "13:00 PM", category: "hotel", categoryLabel: "🏨 숙소 Check-In", duration: "1.5시간 소요", cost: "무료", title: "호놀룰루 입실 & 와이키키 비치 수영", desc: "와이키키 호텔 체크인 후 에메랄드 바다로 들어가 바다 수영 및 보드 체험.", tip: "비치 파라솔은 호텔 프론트 쿠폰으로 무료 대여 가능합니다." }
+          ],
+          "DAY 2": [
+            { time: "08:30 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "4시간 소요", cost: "약 14만 원/인", title: "쿠알로아 랜치 랩터 UTV 오프로드 영화 촬영지 투어", desc: "쥬라기 공원, 킹콩 영화 촬영지 계곡을 강력한 사륜 오프로드 차량으로 질주.", tip: "흙먼지가 날리므로 마스크나 버프를 챙기면 유용합니다." },
+            { time: "14:00 PM", category: "food", categoryLabel: "🍽️ 맛집", duration: "1.5시간 소요", cost: "약 20,000원/인", title: "카후쿠 버터 갈릭 셔림프 버스 런치", desc: "노스쇼어 대표 쉬림프 버스에서 먹는 매콤달콤한 버터 갈릭 새우 덮밥.", tip: "파인애플 아이스크림 디저트가 잘 어울립니다." }
+          ],
+          "DAY 3": [
+            { time: "07:30 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "4시간 소요", cost: "예약비 포함", title: "하나우마 베이 (Hanauma Bay) 보호구역 스노클링", desc: "산호초로 둘러싸인 천연 해양 보호구역에서 분홍 바다거북과 알록달록 바다열대어 탐방.", tip: "사전 온라인 예약(30일 전 오픈)이 필수입니다." },
+            { time: "14:00 PM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "2.5시간 소요", cost: "약 5만 원/인", title: "다이아몬드 헤드 분화구 정상 하이킹", desc: "호놀룰루 시내와 분화구가 한눈에 내다보이는 와이키키 최고의 전경 하이킹.", tip: "편안한 운동화와 물병을 준비하세요." }
+          ],
+          "DAY 4": [
+            { time: "09:00 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "3시간 소요", cost: "약 6만 원/인", title: "와이키키 초급 전문 서핑 레슨", desc: "와이키키 완만한 파도에서 1:1 수중 서핑 일어서기 성공하기.", tip: "래시가드와 아쿠아 슈즈를 신으세요." }
+          ],
+          "DAY 5": [
+            { time: "10:00 AM", category: "healing", categoryLabel: "💆‍♀️ 스파/휴식", duration: "2시간 소요", cost: "포함", title: "마지막 체크아웃 후 코나 커피 시음 및 샌딩", desc: "100% 오리지널 코나 엑스트라 핑 커피 드립 시음 후 센딩 차량 탑승.", tip: "코나 원두 드립백 세트를 추천합니다." }
+          ]
+        }
+      },
+
+      // 5. 괌 (3박 4일 / 휴양중심)
+      {
+        id: "iti-guam-relaxation-3n",
+        title: "괌 투몬 비치 휴식 & 남부 해안 드라이브, 돌핀 크루즈 3박 4일",
+        destination: "괌",
+        destinationCode: "guam",
+        duration: "3N4D",
+        durationLabel: "3박 4일",
+        theme: "relaxation",
+        themeLabel: "휴양 중심 (힐링/스파)",
+        rating: 4.89,
+        reviewsCount: 95,
+        imgUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+        summaryBar: {
+          totalBudget: "약 110만 원 / 1인",
+          bestSeason: "11월 ~ 5월 (건기)",
+          target: "가족 / 태교여행 / 커플",
+          keySpots: "투몬 비치, 남부 드라이브, 돌핀 크루즈, 사랑의 절벽"
+        },
+        days: {
+          "DAY 1": [
+            { time: "14:00 PM", category: "hotel", categoryLabel: "🏨 숙소 Check-In", duration: "1시간 소요", cost: "무료", title: "괌 투몬베이 프론트 리조트 체크인", desc: "공항 15분 거리 투몬베이 프론트 오션뷰 리조트 체크인. 전용 풀 수영.", tip: "고층 오션뷰 요청 시 파도 소리가 평화롭게 들립니다." },
+            { time: "18:00 PM", category: "food", categoryLabel: "🍽️ 맛집", duration: "2시간 소요", cost: "약 45,000원/인", title: "투몬 선셋 비치 참숯 바비큐 & T-본 스테이크", desc: "해변 노을을 바라보며 먹는 안심 스테이크와 시원한 맥주 한 잔.", tip: "석양이 가장 예쁜 6시 20분경 사진을 찍으세요." }
+          ],
+          "DAY 2": [
+            { time: "09:30 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "4시간 소요", cost: "렌터카 비용", title: "괌 남부 해안 드라이브 (솔레다드 관망대 & 메리조)", desc: "에메랄드 바다 따라 드라이브하며 우마탁 마을과 에메랄드 밸리 인생샷.", tip: "에메랄드 밸리 물속 열대어가 훤히 보입니다." },
+            { time: "15:00 PM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "2시간 소요", cost: "약 1만 원/인", title: "사랑의 절벽 (Two Lovers Point) 전망대 투어", desc: "123m 절벽 위에서 투몬만의 파노라마 바다를 감상하는 필수 코스.", tip: "전망대 하트 열쇠 소원 걸기를 해보세요." }
+          ],
+          "DAY 3": [
+            { time: "10:00 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "3시간 소요", cost: "약 6만 원/인", title: "돌핀 크루즈 & 야생 돌고래 관찰, 참치회 시음", desc: "요트를 타고 야생 돌고래 그룹을 탐색하고 선상에서 즐기는 생참치 회 서비스.", tip: "돌고래 점프 순간을 카메라에 담아보세요." },
+            { time: "16:00 PM", category: "cafe", categoryLabel: "☕ 쇼핑/카페", duration: "3시간 소요", cost: "쇼핑 자율", title: "GPO 프리미엄 아울렛 & 로컬 차모로 디저트", desc: "유명 브랜드 아울렛 쇼핑 및 시원한 코코넛 라떼 디저트.", tip: "모바일 아울렛 할인 쿠폰을 챙기세요." }
+          ],
+          "DAY 4": [
+            { time: "10:00 AM", category: "healing", categoryLabel: "💆‍♀️ 스파/휴식", duration: "2시간 소요", cost: "무료", title: "투몬비치 잔잔한 바다 수영 후 체크아웃", desc: "파도가 거의 없는 얕은 투몬 바다 수영 후 샌딩 차량 탑승.", tip: "공항 가기 전 바나나 칩 기념품을 챙기세요." }
+          ]
+        }
+      },
+
+      // 6. 괌 (4박 5일 / 액티비티중심)
+      {
+        id: "iti-guam-activity-4n",
+        title: "괌 스쿠버다이빙/씨워커 & 패러세일링, 정글 크루즈 4박 5일",
+        destination: "괌",
+        destinationCode: "guam",
+        duration: "4N5D",
+        durationLabel: "4박 5일",
+        theme: "adventure",
+        themeLabel: "액티비티 중심 (해양/투어)",
+        rating: 4.92,
+        reviewsCount: 112,
+        imgUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+        summaryBar: {
+          totalBudget: "약 135만 원 / 1인",
+          bestSeason: "연중 온화",
+          target: "액티비티족 / 커플 / 친구",
+          keySpots: "씨워커 수중체험, 패러세일링, 정글 리버 크루즈, 사모안 쇼"
+        },
+        days: {
+          "DAY 1": [
+            { time: "14:00 PM", category: "hotel", categoryLabel: "🏨 숙소 Check-In", duration: "1시간 소요", cost: "무료", title: "괌 입실 및 전용 수영장 해양 장비 점검", desc: "투몬 리조트 체크인 후 수영장에서 튜브 및 오리발 테스트.", tip: "수중 카메라 하우징을 체크하세요." }
+          ],
+          "DAY 2": [
+            { time: "09:30 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "3시간 소요", cost: "약 8만 원/인", title: "피티밤홀 수중 씨워커 (Sea Walker) 수중 피딩", desc: "특수 헬멧을 쓰고 수심 5m 바다 밑을 걸으며 수중 물고기 먹이주기 체험.", tip: "안경을 쓴 채로 착용 가능합니다." },
+            { time: "14:00 PM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "2시간 소요", cost: "약 7만 원/인", title: "투몬 해변 스릴 만점 패러세일링", desc: "보트에 끌려 공중 50m로 떠올라 투몬만 에메랄드 바다를 한눈에 조망.", tip: "퐁당 물에 빠뜨려주는 딥 체험 옵션을 요청해보세요." }
+          ],
+          "DAY 3": [
+            { time: "10:00 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "4시간 소요", cost: "약 6만 원/인", title: "탈로포포 정글 리버 크루즈 & 고대 라테스톤 유적", desc: "강을 거슬러 정글 속으로 들어가 고대 차모로 부족 마을 탐방 및 사모안불쇼.", tip: "모기 기피제를 바르는 것이 좋습니다." }
+          ],
+          "DAY 4": [
+            { time: "10:00 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "3시간 소요", cost: "약 7만 원/인", title: "체험 스쿠버다이빙 수중 가이드 투어", desc: "초보자도 안전하게 전문 강사와 수중 산호초 탐방.", tip: "다이빙 후 18시간 동안은 항공기 탑승이 불가하므로 4일차 아침에 진행합니다." }
+          ],
+          "DAY 5": [
+            { time: "10:00 AM", category: "healing", categoryLabel: "💆‍♀️ 스파/휴식", duration: "2시간 소요", cost: "포함", title: "리조트 샌딩 전 수영 & 기념품 쇼핑", desc: "마지막 수영 후 공항 샌딩 차량 탑승.", tip: "괌 마카다미아 초콜릿을 추천합니다." }
+          ]
+        }
+      },
+
+      // 7. 푸켓 (3박 4일 / 휴양중심)
+      {
+        id: "iti-phuket-relaxation-3n",
+        title: "푸켓 피피섬 럭셔리 요트 투어 & 파통 밤문화, 올드타운 감성 3박 4일",
+        destination: "푸켓",
+        destinationCode: "phuket",
+        duration: "3N4D",
+        durationLabel: "3박 4일",
+        theme: "relaxation",
+        themeLabel: "휴양 중심 (힐링/스파)",
+        rating: 4.88,
+        reviewsCount: 104,
+        imgUrl: "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=800&q=80",
+        summaryBar: {
+          totalBudget: "약 125만 원 / 1인",
+          bestSeason: "11월 ~ 4월 (건기)",
+          target: "미식가 / 커플 / 휴양족",
+          keySpots: "피피섬 피레라군, 카타 록스, 올드타운 카페, 파통 야시장"
+        },
+        days: {
+          "DAY 1": [
+            { time: "11:00 AM", category: "hotel", categoryLabel: "🏨 숙소 Check-In", duration: "1.5시간 소요", cost: "무료", title: "카타 록스 절벽 오션뷰 리조트 체크인", desc: "안다만해가 시원하게 펼쳐진 절벽 풀빌라 체크인. 오가닉 웰컴 허브티 복용.", tip: "절벽 인피니티 풀 배경으로 인생샷을 찍어보세요." },
+            { time: "18:30 PM", category: "sunset", categoryLabel: "🌅 석양 스팟", duration: "2시간 소요", cost: "약 4만 원/인", title: "클리프 록스 선셋 타파스 & 와인 페어링", desc: "붉게 물드는 석양 아래에서 먹는 스페인식 타파스와 산뜻한 샴페인 한 잔.", tip: "야외 클리프 테라스는 쏠라라 컨시어지를 통해 사전 지정 가능합니다." }
+          ],
+          "DAY 2": [
+            { time: "07:30 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "7시간 소요", cost: "약 10만 원/인", title: "피피섬 피레 라군 에메랄드 수중 요트 호핑", desc: "프라이빗 카타마란 요트로 피피섬 마야베이와 피레 라군 절경 스노클링.", tip: "아침 일찍 출발하여 단체 관광객보다 먼저 한적함을 즐깁니다." },
+            { time: "19:00 PM", category: "pub", categoryLabel: "🍹 야시장/펍", duration: "2시간 소요", cost: "약 2만 원/인", title: "푸켓 방라로드 & 야시장 푸드 투어", desc: "파통 방라로드의 화려한 조명 아래서 갓 볶은 팟타이, 푸팟퐁커리, 망고 찰밥 시식.", tip: "위생적인 인기 야시장 노점을 기사가 추천해드립니다." }
+          ],
+          "DAY 3": [
+            { time: "10:30 AM", category: "cafe", categoryLabel: "☕ 힐링 카페", duration: "2.5시간 소요", cost: "약 1.5만 원/인", title: "올드 푸켓 타운 컬러풀 건물 카페 스트리트", desc: "알록달록 파스텔 톤 건물 사이 감성 로컬 디저트 카페 탐방.", tip: "타이 밀크티와 코코넛 케이크를 주문해보세요." },
+            { time: "15:00 PM", category: "healing", categoryLabel: "💆‍♀️ 스파/휴식", duration: "2시간 소요", cost: "포함", title: "안다만 오션스파 천연 스팀 & 타이 정통 마사지", desc: "허브 스팀 사우나와 함께 몸의 지친 피로를 풀어주는 120분 전신 마사지.", tip: "마사지 강도는 약하게/중간/강하게 선택 가능합니다." }
+          ],
+          "DAY 4": [
+            { time: "10:00 AM", category: "food", categoryLabel: "🍽️ 맛집", duration: "1.5시간 소요", cost: "약 2만 원/인", title: "카론 뷰포인트 로컬 똠얌꿍 런치 후 공항 이동", desc: "시원한 안다만 해변이 굽어보이는 식당에서 정통 똠얌꿍 시식 후 공항 샌딩.", tip: "Phuket 시그니처 롤 캐슈넛 까기 선물을 구경하세요." }
+          ]
+        }
+      },
+
+      // 8. 푸켓 (4박 5일 / 액티비티중심)
+      {
+        id: "iti-phuket-activity-4n",
+        title: "푸켓 빠통 해변 해양스포츠 & 카론 ATV, 코랄 아일랜드 4박 5일",
+        destination: "푸켓",
+        destinationCode: "phuket",
+        duration: "4N5D",
+        durationLabel: "4박 5일",
+        theme: "adventure",
+        themeLabel: "액티비티 중심 (해양/투어)",
+        rating: 4.91,
+        reviewsCount: 130,
+        imgUrl: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=800&q=80",
+        summaryBar: {
+          totalBudget: "약 145만 원 / 1인",
+          bestSeason: "11월 ~ 4월 (건기)",
+          target: "액티비티족 / 친구 / 모험가",
+          keySpots: "빠통 바나나보트, 카론 ATV 오프롯, 코랄 아일랜드, 라와이 비치"
+        },
+        days: {
+          "DAY 1": [
+            { time: "14:00 PM", category: "hotel", categoryLabel: "🏨 숙소 Check-In", duration: "1시간 소요", cost: "무료", title: "빠통 해변 메인 리조트 입실", desc: "빠통 비치 바로 앞 리조트 입실 후 해변 산책.", tip: "비치용 샌들을 입구에서 갈아신으세요." }
+          ],
+          "DAY 2": [
+            { time: "09:30 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "3시간 소요", cost: "약 5만 원/인", title: "빠통 비치 제트스키 & 바나나보트 수상 액티비티", desc: "시원하게 안다만해 파도를 가르는 제트스키 타기.", tip: "구명조끼를 반드시 착용하세요." },
+            { time: "14:00 PM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "3시간 소요", cost: "약 6만 원/인", title: "카론 뷰포인트 빅부다 쿼드 ATV 오프로드", desc: "거대한 랜드마크 빅부다 정상을 정글 ATV를 타고 질주.", tip: "바지에 흙이 튈 수 있으니 편안한 복장을 추천합니다." }
+          ],
+          "DAY 3": [
+            { time: "08:30 AM", category: "activity", categoryLabel: "🏄‍♂️ 액티비티", duration: "5시간 소요", cost: "약 7만 원/인", title: "코랄 아일랜드 (Coral Island) 스쿠버 스노클링", desc: "산호초와 흰 모래사장이 아름다운 코랄 아일랜드에서 보트 스노클링.", tip: "바나나비치 투명 카약을 타보세요." }
+          ],
+          "DAY 4": [
+            { time: "10:00 AM", category: "food", categoryLabel: "🍽️ 맛집", duration: "2시간 소요", cost: "약 3만 원/인", title: "라와이 비치 해산물 마켓 갓 잡은 크랩 시식", desc: "어시장에서 직접 랍스터와 타이거 새우를 골라 즉석 요리 시식.", tip: "갈릭 버터 양념이 가장 맛있습니다." }
+          ],
+          "DAY 5": [
+            { time: "10:00 AM", category: "healing", categoryLabel: "💆‍♀️ 스파/휴식", duration: "2시간 소요", cost: "포함", title: "마지막 타이 스포츠 마사지 후 공항 샌딩", desc: "여행 피로를 풀어주는 강한 강도의 오일 마사지 후 샌딩 차량 탑승.", tip: "푸켓 캐슈넛 세트를 선물용으로 사보세요." }
+          ]
+        }
+      }
+    ];
+
+    // Global App State
+    let state = {
+      activeTab: 'all',
+      destinationFilter: 'all',
+      durationFilter: 'all',
+      themeFilter: 'all',
+      quickTagFilter: 'all',
+      savedIds: JSON.parse(localStorage.getItem('solara_saved_korean_itineraries') || '[]'),
+      activeDayTab: {}
+    };
+
+    // DOM Ready
+    document.addEventListener('DOMContentLoaded', () => {
+      initNavbar();
+      initHeroFilters();
+      initCategoryTabs();
+      initSavedDrawer();
+      initCustomModal();
+      initNewsletter();
+      renderItineraries();
+      updateBookmarkBadge();
+    });
+
+    // Navbar Controls
+    function initNavbar() {
+      const hamburger = document.getElementById('hamburgerToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('open');
+          hamburger.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            navMenu.classList.remove('open');
+            hamburger.classList.remove('active');
+          });
+        });
+      }
+    }
+
+    // Hero Floating Filter Bar JS Logic
+    function initHeroFilters() {
+      const form = document.getElementById('heroSearchForm');
+      const resetBtn = document.getElementById('resetFiltersBtn');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          state.destinationFilter = document.getElementById('heroDestination').value;
+          state.durationFilter = document.getElementById('heroDuration').value;
+          state.themeFilter = document.getElementById('heroTheme').value;
+
+          renderItineraries();
+          showToast('맞춤 필터 조건이 새로 반영되었습니다! 🔎');
+
+          const section = document.getElementById('itineraries');
+          if (section) section.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          resetAllFilters();
+        });
+      }
+
+      // Destination Card Click Event
+      document.querySelectorAll('.destination-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const dest = card.dataset.destination;
+          if (dest) {
+            state.destinationFilter = dest;
+            document.getElementById('heroDestination').value = dest;
+            renderItineraries();
+            showToast(`${card.querySelector('.destination-name').textContent} 코스로 필터링되었습니다! 🌴`);
+
+            const section = document.getElementById('itineraries');
+            if (section) section.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Quick Tag Pills
+      document.querySelectorAll('.quick-tag-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.quick-tag-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          state.quickTagFilter = btn.dataset.tag;
+          renderItineraries();
+          showToast(`키워드 #${btn.dataset.tag} 코스를 추천합니다.`);
+        });
+      });
+    }
+
+    // Category Tabs Filter Logic
+    function initCategoryTabs() {
+      const tabs = document.querySelectorAll('#categoryTabs .tab-btn');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          state.activeTab = tab.dataset.filter;
+          renderItineraries();
+        });
+      });
+    }
+
+    // Dynamic Filter Engine
+    function filterItineraries() {
+      return ITINERARIES_DATA.filter(item => {
+        // Tab Filter
+        if (state.activeTab !== 'all') {
+          if (state.activeTab === '3N4D' && item.duration !== '3N4D') return false;
+          if (state.activeTab === '4N5D' && item.duration !== '4N5D') return false;
+          if (state.activeTab === 'relaxation' && item.theme !== 'relaxation') return false;
+          if (state.activeTab === 'adventure' && item.theme !== 'adventure') return false;
+        }
+
+        // Hero Dropdown Select Filters
+        if (state.destinationFilter !== 'all' && item.destinationCode !== state.destinationFilter) return false;
+        if (state.durationFilter !== 'all' && item.duration !== state.durationFilter) return false;
+        if (state.themeFilter !== 'all' && item.theme !== state.themeFilter) return false;
+
+        // Quick Tag Keyword Filter
+        if (state.quickTagFilter !== 'all') {
+          const match = JSON.stringify(item).includes(state.quickTagFilter);
+          if (!match) return false;
+        }
+
+        return true;
+      });
+    }
+
+    // Render Itineraries with Vertical Timelines & Destination Summary Bar
+    function renderItineraries() {
+      const container = document.getElementById('itineraryList');
+      const countDisplay = document.getElementById('resultsCount');
+      const resetBtn = document.getElementById('resetFiltersBtn');
+      if (!container) return;
+
+      const filtered = filterItineraries();
+
+      if (countDisplay) {
+        countDisplay.innerHTML = `총 <span>${filtered.length}</span>개의 맞춤 리조트 일정을 추천합니다`;
+      }
+
+      const isFiltered = state.activeTab !== 'all' || state.destinationFilter !== 'all' || 
+                         state.durationFilter !== 'all' || state.themeFilter !== 'all' || 
+                         state.quickTagFilter !== 'all';
+
+      if (resetBtn) resetBtn.classList.toggle('visible', isFiltered);
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div style="text-align:center; padding: 4rem 1rem; background: #FFF; border-radius: 16px; border: 1px solid var(--border-color);">
+            <div style="font-size: 3.5rem; margin-bottom: 1rem;">🌴</div>
+            <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.5rem;">조건에 맞는 맞춤 일정을 찾지 못했습니다</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">다른 휴양지나 여행 테마 조건으로 필터를 재설정해보세요.</p>
+            <button class="btn btn-primary" onclick="resetAllFilters()">전체 코스 다시 보기</button>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(item => {
+        const isSaved = state.savedIds.includes(item.id);
+        const dayKeys = Object.keys(item.days);
+        
+        if (!state.activeDayTab[item.id]) {
+          state.activeDayTab[item.id] = dayKeys[0];
+        }
+        const currentActiveDay = state.activeDayTab[item.id];
+        const timelineList = item.days[currentActiveDay] || [];
+
+        return `
+          <article class="itinerary-card" data-id="${item.id}">
+            <!-- Header Banner & Summary Bar -->
+            <div class="itinerary-card-header">
+              <img class="card-banner-img" src="${item.imgUrl}" alt="${item.title}" loading="lazy">
+              <div class="card-main-info">
+                <div>
+                  <div class="card-top-meta">
+                    <span class="card-destination-tag">📍 ${item.destination} • ${item.durationLabel}</span>
+                    <button class="card-save-btn ${isSaved ? 'saved' : ''}" onclick="toggleSaveItinerary('${item.id}', event)">
+                      ${isSaved ? '❤️ 찜함' : '🤍 찜하기'}
+                    </button>
+                  </div>
+                  <h3 class="card-title">${item.title}</h3>
+                  <p class="card-subtitle">⭐ ${item.rating}점 (${item.reviewsCount}개의 만족 후기) • ${item.themeLabel}</p>
+                </div>
+
+                <!-- Destination Summary Bar -->
+                <div class="highlight-summary-grid">
+                  <div class="summary-box">
+                    <span class="summary-label">💰 예상 총 예산</span>
+                    <span class="summary-value">${item.summaryBar.totalBudget}</span>
+                  </div>
+                  <div class="summary-box">
+                    <span class="summary-label">☀️ 추천 시기</span>
+                    <span class="summary-value">${item.summaryBar.bestSeason}</span>
+                  </div>
+                  <div class="summary-box">
+                    <span class="summary-label">👥 추천 대상</span>
+                    <span class="summary-value">${item.summaryBar.target}</span>
+                  </div>
+                  <div class="summary-box">
+                    <span class="summary-label">✨ 핵심 스팟</span>
+                    <span class="summary-value">${item.summaryBar.keySpots}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DAY Tabs Bar -->
+            <div class="day-tabs-bar">
+              ${dayKeys.map(dayKey => `
+                <button class="day-tab-btn ${dayKey === currentActiveDay ? 'active' : ''}"
+                        onclick="switchDayTab('${item.id}', '${dayKey}')">
+                  ${dayKey} Schedule
+                </button>
+              `).join('')}
+            </div>
+
+            <!-- Vertical Timeline UI -->
+            <div class="timeline-container">
+              <div class="timeline-track">
+                ${timelineList.map(node => `
+                  <div class="timeline-item">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-header">
+                      <span class="badge-time">⏰ ${node.time}</span>
+                      <span class="badge-category ${node.category}">${node.categoryLabel}</span>
+                      <span class="badge-duration">⏱️ ${node.duration}</span>
+                      <span class="badge-cost">💰 ${node.cost}</span>
+                    </div>
+                    <h4 class="timeline-title">${node.title}</h4>
+                    <p class="timeline-desc">${node.desc}</p>
+                    ${node.tip ? `<div class="timeline-tip">💡 쏠라라 꿀팁: ${node.tip}</div>` : ''}
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // Switch DAY Tab
+    window.switchDayTab = function(itineraryId, dayKey) {
+      state.activeDayTab[itineraryId] = dayKey;
+      renderItineraries();
+    };
+
+    // Reset All Filters
+    window.resetAllFilters = function() {
+      state.activeTab = 'all';
+      state.destinationFilter = 'all';
+      state.durationFilter = 'all';
+      state.themeFilter = 'all';
+      state.quickTagFilter = 'all';
+
+      document.getElementById('heroDestination').value = 'all';
+      document.getElementById('heroDuration').value = 'all';
+      document.getElementById('heroTheme').value = 'all';
+
+      document.querySelectorAll('#categoryTabs .tab-btn').forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.filter === 'all');
+      });
+      document.querySelectorAll('.quick-tag-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      renderItineraries();
+      showToast('검색 필터가 모두 초기화되었습니다.');
+    };
+
+    // Bookmark Toggle
+    window.toggleSaveItinerary = function(id, event) {
+      if (event) event.stopPropagation();
+
+      const index = state.savedIds.indexOf(id);
+      const itinerary = ITINERARIES_DATA.find(item => item.id === id);
+      const title = itinerary ? itinerary.title : '일정';
+
+      if (index > -1) {
+        state.savedIds.splice(index, 1);
+        showToast(`'${title}' 일정을 찜 목록에서 삭제했습니다.`);
+      } else {
+        state.savedIds.push(id);
+        showToast(`'${title}' 일정을 찜한 목록에 담았습니다! ❤️`);
+      }
+
+      localStorage.setItem('solara_saved_korean_itineraries', JSON.stringify(state.savedIds));
+      updateBookmarkBadge();
+      renderItineraries();
+      renderSavedDrawerItems();
+    };
+
+    function updateBookmarkBadge() {
+      const badge = document.getElementById('bookmarkCountBadge');
+      if (badge) {
+        badge.textContent = state.savedIds.length;
+        badge.classList.add('bounce');
+        setTimeout(() => badge.classList.remove('bounce'), 300);
+      }
+    }
+
+    // Saved Side Drawer
+    function initSavedDrawer() {
+      const openBtn = document.getElementById('openSavedDrawerBtn');
+      const closeBtn = document.getElementById('closeSavedDrawerBtn');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const drawer = document.getElementById('savedDrawer');
+      const clearBtn = document.getElementById('clearSavedBtn');
+
+      if (openBtn && drawer && backdrop) {
+        openBtn.addEventListener('click', () => {
+          drawer.classList.add('open');
+          backdrop.classList.add('open');
+          renderSavedDrawerItems();
+        });
+
+        const closeDrawer = () => {
+          drawer.classList.remove('open');
+          backdrop.classList.remove('open');
+        };
+
+        if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+        backdrop.addEventListener('click', closeDrawer);
+      }
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          if (state.savedIds.length === 0) return;
+          state.savedIds = [];
+          localStorage.setItem('solara_saved_korean_itineraries', JSON.stringify(state.savedIds));
+          updateBookmarkBadge();
+          renderItineraries();
+          renderSavedDrawerItems();
+          showToast('찜한 일정을 모두 삭제했습니다.');
+        });
+      }
+    }
+
+    function renderSavedDrawerItems() {
+      const body = document.getElementById('savedDrawerBody');
+      if (!body) return;
+
+      if (state.savedIds.length === 0) {
+        body.innerHTML = `
+          <div style="text-align:center; margin: auto 0; color: var(--text-muted);">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🤍</div>
+            <p style="font-weight: 800; color: var(--text-dark); margin-bottom: 0.25rem;">찜한 일정이 없습니다</p>
+            <p style="font-size: 0.85rem;">마음에 드는 일정 카드의 '찜하기' 버튼을 눌러보세요.</p>
+          </div>
+        `;
+        return;
+      }
+
+      const savedList = ITINERARIES_DATA.filter(item => state.savedIds.includes(item.id));
+
+      body.innerHTML = savedList.map(item => `
+        <div class="saved-item-card">
+          <img src="${item.imgUrl}" alt="${item.title}" class="saved-item-img">
+          <div class="saved-item-details">
+            <h4 class="saved-item-title">${item.title}</h4>
+            <div class="saved-item-meta">${item.destination} • ${item.durationLabel} • ${item.themeLabel}</div>
+          </div>
+          <button class="saved-item-remove" onclick="toggleSaveItinerary('${item.id}', event)" title="삭제">
+            ✕
+          </button>
+        </div>
+      `).join('');
+    }
+
+    // Custom Plan Builder Modal
+    function initCustomModal() {
+      const openBtn = document.getElementById('openCustomModalBtn');
+      const closeBtn = document.getElementById('closeCustomModalBtn');
+      const backdrop = document.getElementById('customModalBackdrop');
+      const form = document.getElementById('customPlanForm');
+      const resultBox = document.getElementById('customPlanResult');
+
+      if (openBtn && backdrop) {
+        openBtn.addEventListener('click', () => {
+          backdrop.classList.add('open');
+        });
+
+        const closeModal = () => {
+          backdrop.classList.remove('open');
+          if (resultBox) resultBox.classList.remove('active');
+        };
+
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        backdrop.addEventListener('click', (e) => {
+          if (e.target === backdrop) closeModal();
+        });
+      }
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const dest = document.getElementById('planDestination').value;
+          const duration = document.getElementById('planDuration').value;
+          const budget = document.getElementById('planBudget').value;
+
+          if (resultBox) {
+            resultBox.classList.add('active');
+            resultBox.innerHTML = `
+              <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--accent-sage-dark); margin-bottom: 0.4rem;">✨ 맞춤 일정 생성이 완료되었습니다!</h4>
+              <p style="font-size: 0.9rem; color: var(--text-dark); margin-bottom: 0.5rem;">
+                <strong>선택 조건:</strong> ${dest} | <strong>기간:</strong> ${duration} | <strong>스타일:</strong> ${budget}
+              </p>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">
+                쏠라라 큐레이터가 1:1 맞춤 세부 타임라인 표를 구성하여 안내해드립니다.
+              </p>
+            `;
+          }
+          showToast('맞춤 일정 요청이 접수되었습니다! ✨');
+        });
+      }
+    }
+
+    // Newsletter Submission
+    function initNewsletter() {
+      const form = document.getElementById('newsletterForm');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const input = form.querySelector('.newsletter-input');
+          if (input && input.value) {
+            showToast(`구독해주셔서 감사합니다! (${input.value}) 🌴`);
+            input.value = '';
+          }
+        });
+      }
+    }
+
+    // Toast Notification System
+    function showToast(message) {
+      let container = document.getElementById('toastContainer');
+      if (!container) {
+        container = document.createElement('div');
+        container.id = 'toastContainer';
+        container.className = 'toast-container';
+        document.body.appendChild(container);
+      }
+
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.innerHTML = `<span>✨</span> <span>${message}</span>`;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateX(40px)';
+        toast.style.transition = 'all 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
